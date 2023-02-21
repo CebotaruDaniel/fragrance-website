@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@font-face {
+  font-family: Magna;
+  src: url(/fonts/Magna.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.heromain {
+  height: 90vh;
+  background-image: url(/images/mainimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0.7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-right: 3rem;
+}
+.navbar li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Work Sans";
+  color: #081323;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.searchicon {
+  background-color: rgba(8, 19, 35, 0.9450980392);
+  border-radius: 9px;
+  padding: 1rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+}
+.searchicon img {
+  width: 1rem;
+}
+
+.secondmain,
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 83.65%);
+}
+
+.secondmain {
+  padding: 1rem;
+  gap: 4rem;
+}
+
+.box {
+  gap: 1rem;
+}
+.box img {
+  width: 2rem;
+}
+
+.box__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.box__text h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  color: #081323;
+  font-size: 1.2rem;
+}
+.box__text p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: #828282;
+}
+
+.introtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 3rem;
+  top: 35vh;
+  flex-direction: column;
+  line-height: 4.2rem;
+  font-family: Magna;
+  color: rgba(8, 19, 35, 0.9450980392);
+}
+.introtext h1 {
+  font-size: 3rem;
+}
+.introtext h2 {
+  font-size: 3rem;
+}
+.introtext span {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.bestsellers__section {
+  margin-top: 3rem;
+  padding: 2rem;
+  font-family: "Work Sans";
+}
+.bestsellers__section h1, .bestsellers__section h2 {
+  font-size: 3rem;
+  color: rgba(8, 19, 35, 0.9450980392);
+}
+.bestsellers__section p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #828282;
+}
+.bestsellers__section .section__text {
+  margin-left: 10rem;
+}
+
+.card {
+  width: 15rem;
+  height: 20rem;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 2rem;
+  position: relative;
+  gap: 1rem;
+  border-radius: 30px;
+}
+.card .text {
+  display: grid;
+  place-items: center;
+}
+
+.row__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+}
+
+.card .title {
+  font-family: "Work Sans";
+  font-size: 0.9em;
+  font-weight: 400;
+  color: rgba(8, 19, 35, 0.9450980392);
+}
+
+.card .price {
+  font-family: "Work Sans";
+  font-size: 0.9em;
+  color: #828282;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image img {
+  background: rgb(241, 241, 241);
+  width: 10rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.bestseller__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}/*# sourceMappingURL=main.css.map */
