@@ -137,7 +137,7 @@ nav {
   font-size: 3rem;
 }
 .introtext span {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
@@ -145,8 +145,10 @@ nav {
   margin-top: 3rem;
   padding: 2rem;
   font-family: "Work Sans";
+  position: relative;
 }
-.bestsellers__section h1, .bestsellers__section h2 {
+.bestsellers__section h1,
+.bestsellers__section h2 {
   font-size: 3rem;
   color: rgba(8, 19, 35, 0.9450980392);
 }
@@ -161,14 +163,14 @@ nav {
 
 .card {
   width: 15rem;
-  height: 20rem;
+  height: 17rem;
   box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background: #fff;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   gap: 1rem;
   border-radius: 30px;
@@ -218,4 +220,67 @@ nav {
   justify-content: center;
   gap: 3rem;
   margin-top: 5rem;
+}
+
+.blob, .blob1, .blob2, .blob3, .blob4, .blob5, .blob6 {
+  position: absolute;
+  z-index: -1;
+}
+.blob img, .blob1 img, .blob2 img, .blob3 img, .blob4 img, .blob5 img, .blob6 img {
+  width: 8rem;
+}
+
+.blob {
+  top: 150px;
+}
+.blob img {
+  width: 30rem;
+}
+
+.blob1 {
+  top: 100px;
+  right: 60px;
+}
+.blob1 img {
+  width: 20rem;
+}
+
+.blob2 {
+  top: 700px;
+  right: 200px;
+}
+.blob2 img {
+  width: 25rem;
+}
+
+.blob3 {
+  top: 650px;
+  left: 50px;
+}
+.blob3 img {
+  width: 25rem;
+}
+
+.blob4 {
+  top: 140px;
+  left: 550px;
+}
+.blob4 img {
+  width: 10rem;
+}
+
+.blob5 {
+  top: 550px;
+  right: 50px;
+}
+.blob5 img {
+  width: 5rem;
+}
+
+.blob6 {
+  bottom: 0;
+  left: 650px;
+}
+.blob6 img {
+  width: 5rem;
 }/*# sourceMappingURL=main.css.map */

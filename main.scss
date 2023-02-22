@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
 $black-color: #081323f1;
-$gray-color : #828282;
+$gray-color: #828282;
 
 @font-face {
   font-family: Magna;
@@ -139,107 +139,178 @@ nav {
   justify-content: center;
   position: absolute;
   right: 3rem;
-	top: 35vh;
-	flex-direction: column;
-	line-height: 4.2rem;
-	font-family: Magna;
-	color: $black-color;
+  top: 35vh;
+  flex-direction: column;
+  line-height: 4.2rem;
+  font-family: Magna;
+  color: $black-color;
 
-	h1{
-		font-size: 3rem;
-	}
+  h1 {
+    font-size: 3rem;
+  }
 
-	h2{
-		font-size: 3rem;
-	}
+  h2 {
+    font-size: 3rem;
+  }
 
-	span{
-		font-size: 5rem;
-		text-transform: uppercase;
-	}
+  span {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
 }
 
+.bestsellers__section {
+  margin-top: 3rem;
+  padding: 2rem;
+  font-family: "Work Sans";
+	position: relative;
 
-.bestsellers__section{
-	margin-top: 3rem;
-	padding: 2rem;
-	font-family: "Work Sans";
+  h1,
+  h2 {
+    font-size: 3rem;
+    color: $black-color;
+  }
 
-	h1,h2{
-		font-size: 3rem;
-		color: $black-color;
-	}
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: $gray-color;
+  }
 
-	p{
-		margin-top: 1rem;
-		font-size: 1rem;
-		color: $gray-color;
-	}
-
-	.section__text{
-		margin-left: 10rem;
-	}
+  .section__text {
+    margin-left: 10rem;
+  }
 }
 
 .card {
-	width: 15rem;
-	height: 20rem;
-	box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background: #fff;
-	padding: 2rem;
-	position: relative;
-	gap: 1rem;
-	border-radius: 30px;
+  width: 15rem;
+  height: 17rem;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 1rem;
+  position: relative;
+  gap: 1rem;
+  border-radius: 30px;
 
-	.text{
-		display: grid;
-		place-items: center;
+  .text {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.row__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+}
+
+.card .title {
+  font-family: "Work Sans";
+  font-size: 0.9em;
+  font-weight: 400;
+  color: $black-color;
+}
+
+.card .price {
+  font-family: "Work Sans";
+  font-size: 0.9em;
+  color: $gray-color;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image img {
+  background: rgb(241, 241, 241);
+  width: 10rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.bestseller__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+
+.blob, .blob1  , .blob2  , .blob3 , .blob4 , .blob5 , .blob6{
+
+	position: absolute;
+	z-index: -1;
+	img{
+		width: 8rem;
 	}
- }
- 
+}
 
- .row__text{
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-direction: column;
-	text-align: left;
-	width: 90%;
- }
- 
- .card .title {
-	font-family: "Work Sans";
-	font-size: 0.9em;
-	font-weight: 400;
-	color: $black-color;
- }
- 
- .card .price {
-	font-family: "Work Sans";
-	font-size: 0.9em;
-	color: $gray-color;
- }
- 
- .text {
-	max-width: 55px;
- }
- 
- .image img{
-	background: rgb(241, 241, 241);
-	width: 10rem;
-	display: grid;
-	place-items: center;
-	border-radius: 10px;
- }
+.blob{
+	top: 150px;
 
- .bestseller__row{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 3rem;
-	margin-top: 5rem;
- }
+	img{
+		width: 30rem;
+	}
+}
+
+.blob1{
+	top: 100px;
+	right: 60px;
+	img{
+		width: 20rem;
+	}
+}
+
+.blob2{
+	top: 700px;
+	right: 200px;
+
+	img{
+		width: 25rem;
+	}
+}
+
+.blob3{
+	top: 650px;
+	left: 50px;
+
+	img{
+		width: 25rem;
+	}
+}
+
+.blob4{
+	top: 140px;
+	left: 550px;
+
+	img{
+		width: 10rem;
+	}
+}
+
+.blob5{
+	top: 550px;
+	right: 50px;
+
+	img{
+		width: 5rem;
+	}
+}
+
+.blob6{
+	bottom: 0;
+	left: 650px;
+
+	img{
+		width: 5rem;
+	}
+}
