@@ -3,6 +3,10 @@
   font-family: Magna;
   src: url(/fonts/Magna.ttf);
 }
+@font-face {
+  font-family: std;
+  src: url(/fonts/Century\ Gothic\ Std\ Regular.otf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -20,7 +24,7 @@ li {
 
 .heromain {
   height: 90vh;
-  background-image: url(/images/mainimage.jpg);
+  background-image: url(/images/anna-kumpan-99eEkSEr8iI-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,10 +48,10 @@ li {
 .navbar li {
   font-style: normal;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 28px;
   text-align: center;
-  font-family: "Work Sans";
+  font-family: std;
   color: #081323;
 }
 
@@ -60,7 +64,7 @@ nav {
 }
 
 .searchicon {
-  background-color: rgba(8, 19, 35, 0.9450980392);
+  background-color: #000000;
   border-radius: 9px;
   padding: 1rem;
   padding-right: 1.2rem;
@@ -123,12 +127,12 @@ nav {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 3rem;
+  right: 10rem;
   top: 35vh;
   flex-direction: column;
   line-height: 4.2rem;
   font-family: Magna;
-  color: rgba(8, 19, 35, 0.9450980392);
+  color: white;
 }
 .introtext h1 {
   font-size: 3rem;
@@ -141,24 +145,30 @@ nav {
   text-transform: uppercase;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .bestsellers__section {
   margin-top: 3rem;
   padding: 2rem;
   font-family: "Work Sans";
   position: relative;
+  width: 70%;
 }
 .bestsellers__section h1,
 .bestsellers__section h2 {
   font-size: 3rem;
-  color: rgba(8, 19, 35, 0.9450980392);
+  color: #000000;
+  font-family: std;
 }
 .bestsellers__section p {
   margin-top: 1rem;
   font-size: 1rem;
-  color: #828282;
-}
-.bestsellers__section .section__text {
-  margin-left: 10rem;
+  color: #757575;
 }
 
 .card {
@@ -193,13 +203,13 @@ nav {
   font-family: "Work Sans";
   font-size: 0.9em;
   font-weight: 400;
-  color: rgba(8, 19, 35, 0.9450980392);
+  color: #000000;
 }
 
 .card .price {
   font-family: "Work Sans";
   font-size: 0.9em;
-  color: #828282;
+  color: #757575;
 }
 
 .text {
@@ -222,65 +232,114 @@ nav {
   margin-top: 5rem;
 }
 
-.blob, .blob1, .blob2, .blob3, .blob4, .blob5, .blob6 {
-  position: absolute;
-  z-index: -1;
-}
-.blob img, .blob1 img, .blob2 img, .blob3 img, .blob4 img, .blob5 img, .blob6 img {
-  width: 8rem;
-}
-
-.blob {
-  top: 150px;
-}
-.blob img {
-  width: 30rem;
+.big__image {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.blob1 {
-  top: 100px;
-  right: 60px;
+.add__section {
+  margin-top: 3rem;
+  width: 95%;
 }
-.blob1 img {
-  width: 20rem;
+.add__section img {
+  width: 100%;
 }
-
-.blob2 {
-  top: 700px;
-  right: 200px;
+.add__section .add__text {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
 }
-.blob2 img {
-  width: 25rem;
+.add__section .add__text p, .add__section .add__text h1 {
+  font-family: std;
 }
-
-.blob3 {
-  top: 650px;
-  left: 50px;
+.add__section .add__text p {
+  color: #757575;
 }
-.blob3 img {
-  width: 25rem;
-}
-
-.blob4 {
-  top: 140px;
-  left: 550px;
-}
-.blob4 img {
-  width: 10rem;
+.add__section .add__text h1 {
+  color: #000000;
+  font-size: 1.3rem;
 }
 
-.blob5 {
-  top: 550px;
-  right: 50px;
-}
-.blob5 img {
-  width: 5rem;
+/* CSS */
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: std;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, transform 0.1s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  width: 10%;
 }
 
-.blob6 {
-  bottom: 0;
-  left: 650px;
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
 }
-.blob6 img {
-  width: 5rem;
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(0.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+footer {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footerfull {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+footer .box_footer {
+  margin-top: 2rem;
+  font-family: std;
+}
+footer .box_footer h5 {
+  color: #000000;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+footer .box_footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #757575;
+  font-size: 0.7rem;
 }/*# sourceMappingURL=main.css.map */
